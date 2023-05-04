@@ -1,0 +1,24 @@
+.signup-page a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #000;
+    transition: all ease 0.2s;
+}
+.signup-page a:hover{
+    text-decoration: underline;
+}
+.button-signup{
+    margin-bottom: 8rem;
+}
+.btn-back{
+    background-color: #292929;
+}
+.btn-back a{
+    color: #f0efee;
+}
+.btn-signup{
+    background-color: #FFC82E;
+}
+.btn-signup:hover{
+    background-color: rgb(255, 187, 0);
+}

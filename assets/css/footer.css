@@ -1,0 +1,14 @@
+.footer{
+    background-color: #292929;
+    color: #f0efee;
+}
+.footer span,
+.footer li{
+    line-height: 1.6rem;
+    font-size: 0.8rem;
+}
+.footer-logo img{
+    max-width: 100%;
+    filter: brightness(0) invert(1);
+   -webkit-filter: brightness(0) invert(1);
+}

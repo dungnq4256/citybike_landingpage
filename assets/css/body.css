@@ -1,0 +1,93 @@
+.banner img{
+    width: 100%;
+}
+
+.category-header{
+    position: relative;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    color: #FFC82E;
+    background-color: #292929;
+}
+#triangle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-bottom: 20px solid #FFC82E;
+    border-left: 15px solid transparent;
+}
+
+.category-item{
+    cursor: pointer;
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+    transition: all ease 0.2s;
+    background-color: #fff;
+}
+.category-item:hover{
+    background-color: #ececec;
+}
+.category-item:hover i{
+    color: #ffc628;
+}
+.category-item img{
+    width: 5rem;
+}
+
+.title button{
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 0.5px solid #c9c9c9;
+    background-color: #fff;
+    font-size: 0.45rem;
+    transition: all ease 0.2s;
+}
+.title button:hover{
+    color: #FFC82E;
+    border: 0.5px solid #FFC82E;
+}
+
+.product-item img{
+    cursor: pointer;
+    width: 100%;
+}
+.product-item span{
+    font-size: 0.9rem;
+}
+.promotion{
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 50px solid #FFC82E;
+    border-right: 60px solid transparent;
+}
+.promotion-text{
+    top: 0.4rem;
+    left: 0.3rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    transform: rotate(-40deg);
+}
+
+.top-sale h3{
+    color: #FFC82E;
+}
+.top-sale button{
+    font-size: 0.8rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #FFC82E;
+    border: none;
+    transition: all ease 0.2s;
+}
+.top-sale button:hover{
+    background-color: #fbbc0e;
+}
+
+.product-thumbnail{
+    width: 20%;
+    height: auto;
+}

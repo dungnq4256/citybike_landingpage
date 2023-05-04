@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+        />
+        <title>Trang chủ | City Bike</title>
+    </head>
+    <body>
+        <div class="small_nav">
+            <div
+                class="container d-flex justify-content-between align-items-center py-2"
+            >
+                <div class="d-flex">
+                    <p class="m-0">
+                        Chào mừng bạn đến với
+                        <span class="text-yellow">Citybike</span>
+                    </p>
+                    <div class="mx-2">|</div>
+                    <p class="m-0">
+                        Hotline:
+                        <span class="text-yellow">0934 55 88 90</span>
+                    </p>
+                </div>
+                <div class="d-flex">
+                    <a class="text-decoration-none" href="/signup.html">Đăng ký</a>
+                    <div class="mx-2">|</div>
+                    <a class="text-decoration-none" href="#">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-header d-flex justify-content-center">
+            <div
+                class="container d-flex justify-content-around align-items-center py-4"
+            >
+                <div class="main-logo">
+                    <a href="/index.html"><img src="./assets/image/logo.png" alt="Logo" /></a>
+                </div>
+                <div
+                    class="search-box d-flex flex-fill align-items-center bg-white"
+                >
+                    <div>
+                        <select
+                            class="mx-2"
+                            name="search-select"
+                            id="search-select"
+                        >
+                            <option value="0" default selected>Danh mục</option>
+                            <option value="1">B</option>
+                            <option value="2">C</option>
+                        </select>
+                    </div>
+                    <div
+                        style="
+                            padding: 0.9rem 0;
+                            border-left: 1px solid rgb(222, 222, 222);
+                        "
+                    ></div>
+                    <div class="d-flex flex-fill mx-3">
+                        <input
+                            type="text"
+                            class="flex-fill border-0"
+                            placeholder="Nhập thông tin tìm kiếm"
+                        />
+                        <i class="fa-solid fs-5 fa-magnifying-glass"></i>
+                    </div>
+                </div>
+
+                <div
+                    class="header-cart d-flex justify-content-center align-items-center text-white"
+                >
+                    <div class="position-relative me-2">
+                        <i class="fa-sharp fa-solid fa-bag-shopping fs-2"></i>
+                        <div
+                            class="header-cart_number position-absolute rounded-circle text-center"
+                        >
+                            3
+                        </div>
+                        <div class="cart position-absolute bg-white border">
+                            <div
+                                class="d-flex justify-content-start border-bottom m-3 mb-0 pb-3"
+                            >
+                                <img
+                                    class="border w-25"
+                                    src="./assets/image/den.png"
+                                    alt=""
+                                />
+                                <div class="d-flex flex-column ms-3 mt-1">
+                                    <span class="text-secondary"
+                                        >Tay nắm Santa-Cuz - Đỏ</span
+                                    >
+                                    <span class="text-danger fs-6 fw-bold my-2"
+                                        >500.000 ₫
+                                        <span
+                                            class="text-black-50 text-decoration-line-through"
+                                            >600.000 ₫</span
+                                        >
+                                    </span>
+                                    <input
+                                        type="number"
+                                        value="1"
+                                        style="width: 50px"
+                                    />
+                                </div>
+                            </div>
+
+                            <div
+                                class="d-flex justify-content-start border-bottom m-3 mb-0 pb-3"
+                            >
+                                <img
+                                    class="border w-25"
+                                    src="./assets/image/den.png"
+                                    alt=""
+                                />
+                                <div class="d-flex flex-column ms-3 mt-1">
+                                    <span class="text-secondary"
+                                        >Tay nắm Santa-Cuz - Đỏ</span
+                                    >
+                                    <span class="text-danger fs-6 fw-bold my-2"
+                                        >500.000 ₫
+                                        <span
+                                            class="text-black-50 text-decoration-line-through"
+                                            >600.000 ₫</span
+                                        ></span
+                                    >
+                                    <input
+                                        type="number"
+                                        value="1"
+                                        style="width: 50px"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="d-flex justify-content-between border-bottom m-3 mb-0 pb-3"
+                            >
+                                <span class="text-secondary fw-bold"
+                                    >Thành tiền</span
+                                >
+                                <span class="text-danger fw-bold"
+                                    >1.000.000 ₫</span
+                                >
+                            </div>
+                            <div class="d-flex justify-content-end p-3">
+                                <button class="bg-white me-5">GIỎ HÀNG</button>
+                                <button>THANH TOÁN</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-flex flex-column">
+                        <div style="font-size: 0.9rem">GIỎ HÀNG</div>
+                        <div style="font-size: 0.8rem">(3) sản phẩm</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="container d-flex">
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2 nav-item_active">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <i class="fa-solid fa-house-chimney fs-6 me-2"></i>
+                        <p class="m-0">HOME</p>
+                    </div>
+                </div>
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <p class="m-0">SẢN PHẨM</p>
+                        <i class="fa-solid fa-sort-down fs-6 ms-2"></i>
+                    </div>
+                </div>
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <p class="m-0">SẢN PHẨM MỚI</p>
+                    </div>
+                </div>
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <p class="m-0">SẢN PHẨM BÁN CHẠY</p>
+                    </div>
+                </div>
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <p class="m-0">TIN TỨC</p>
+                    </div>
+                </div>
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <p class="m-0">BỘ SƯU TẬP</p>
+                    </div>
+                </div>
+                <div class="nav-item px-2 px-lg-3 px-xl-4 py-2">
+                    <div
+                        class="nav-info d-flex justify-content-center align-items-start"
+                    >
+                        <p class="m-0">LIÊN HỆ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/image/slide1.png" alt="" />
+                        <button class="position-absolute">Xem ngay</button>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/image/slide1.png" alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/image/slide1.png" alt="" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="banner my-5">
+                    <div class="row">
+                        <div class="col-4">
+                            <img
+                                class="item-hover"
+                                src="./assets/image/banner1.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col-4">
+                            <img
+                                class="item-hover"
+                                src="./assets/image/banner2.png"
+                                alt=""
+                            />
+                        </div>
+                        <div class="col-4">
+                            <img
+                                class="item-hover"
+                                src="./assets/image/banner3.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div
+                        class="col-12 col-lg-3 d-flex flex-column justify-content-between"
+                    >
+                        <div class="category">
+                            <div class="category-header py-2 ps-4">
+                                DANH MỤC SẢN PHẨM
+                                <div id="triangle"></div>
+                            </div>
+                            <div class="category-body">
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Xe đạp thông dụng
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Xe đạp thời trang
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Xe đạp thể thao, MTB
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Xe đạp trẻ em
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Xe đạp nhập khẩu
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Xe đạp khác
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Phụ kiện - Đồ nghề xe đạp
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Phụ tùng xe đạp
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Trang phục - Bảo hộ xe đạp
+                                </div>
+                                <div
+                                    class="category-item py-2 ps-4 border text-hover"
+                                >
+                                    <i
+                                        class="fas fa-arrow-circle-right fa-xs me-1"
+                                    ></i>
+                                    Sản phẩm thể thao khác
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category mt-4">
+                            <div class="category-header py-2 ps-4">
+                                SẢN PHẨM BÁN CHẠY
+                                <div id="triangle"></div>
+                            </div>
+                            <div class="category-body">
+                                <div
+                                    class="category-item d-flex py-3 ps-3 border"
+                                >
+                                    <img
+                                        src="./assets/image/cam1.png"
+                                        class="border me-2"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column my-auto">
+                                        <span class="text-hover"
+                                            >Xe đạp địa hình cam</span
+                                        >
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="category-item d-flex py-3 ps-3 border"
+                                >
+                                    <img
+                                        src="./assets/image/xanh1.png"
+                                        class="border me-2"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column my-auto">
+                                        <span class="text-hover"
+                                            >Xe đạp địa hình xanh</span
+                                        >
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="category-item d-flex py-3 ps-3 border"
+                                >
+                                    <img
+                                        src="./assets/image/vang1.png"
+                                        class="border me-2"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column my-auto">
+                                        <span class="text-hover"
+                                            >Xe đạp địa hình vàng</span
+                                        >
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="category-item d-flex py-3 ps-3 border"
+                                >
+                                    <img
+                                        src="./assets/image/den1.png"
+                                        class="border me-2"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column my-auto">
+                                        <span class="text-hover"
+                                            >Xe đạp địa hình đen</span
+                                        >
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-4">
+                            <img
+                                src="./assets//image/banner.png"
+                                style="width: 100%"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                    <div
+                        class="col-12 col-lg-9 d-flex flex-column justify-content-between"
+                    >
+                        <div
+                            class="title d-flex justify-content-between border-bottom fw-bold pt-2"
+                        >
+                            <span
+                                class="pb-1 border-bottom border-3 border-warning"
+                                >SẢN PHẨM MỚI</span
+                            >
+                            <div class="">
+                                <button>
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/cam.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình cam</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/xanh.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình xanh</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/vang.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình vàng</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/den.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình đen</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/cam1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình cam</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/xanh1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình xanh</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/vang1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình vàng</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/den1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình đen</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img
+                                class="my-4 w-100"
+                                src="./assets//image//banner-doc.png"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="title d-flex justify-content-between border-bottom fw-bold pt-2"
+                        >
+                            <span
+                                class="pb-1 border-bottom border-3 border-warning"
+                                >SẢN PHẨM KHUYẾN MẠI</span
+                            >
+                            <div class="">
+                                <button>
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button>
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-content">
+                            <div class="row">
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/cam.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình cam</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                        <div
+                                            class="promotion position-absolute"
+                                        ></div>
+                                        <div
+                                            class="promotion-text position-absolute"
+                                        >
+                                            -50%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/xanh.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình xanh</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/vang.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình vàng</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/den.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình đen</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/cam1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình cam</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/xanh1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình xanh</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/vang1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình vàng</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 col-lg-3 mt-4">
+                                    <div
+                                        class="product-item item-hover position-relative d-flex flex-column justify-content-center align-items-center p-3 border bg-white"
+                                    >
+                                        <div
+                                            class="icon-drop position-absolute d-flex flex-column"
+                                        >
+                                            <i
+                                                class="fa-solid fa-cart-plus fa-xl"
+                                            ></i>
+                                        </div>
+                                        <img
+                                            src="./assets/image/den1.png"
+                                            alt=""
+                                        />
+                                        <span class="text-hover">Xe đạp địa hình đen</span>
+                                        <div class="star-wrapper">
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                            <i
+                                                class="fas fa-star fa-xs text-yellow"
+                                            ></i>
+                                        </div>
+                                        <span class="text-danger fs-6 fw-bold"
+                                            >4.099.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="top-sale d-flex flex-column justify-content-center align-items-center p-5 mt-5"
+                style="
+                    background-image: url(./assets/image/template.png);
+                    background-size: cover;
+                "
+            >
+                <h3 class="fw-bold">BÁN CHẠY TRONG TUẦN</h3>
+                <div
+                    class="px-4 mb-4 border-bottom border-3 border-white"
+                ></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                            <div
+                                class="product-item item-hover d-flex flex-column justify-content-center align-items-center bg-white"
+                            >
+                                <img
+                                    class="border-bottom"
+                                    src="./assets/image/cam1.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center p-3"
+                                >
+                                    <span class="text-hover">Santa Cruz - Cam</span>
+                                    <span class="text-danger fs-6 fw-bold my-2"
+                                        >500.000 ₫
+                                        <span
+                                            class="text-black-50 text-decoration-line-through"
+                                            >600.000 ₫</span
+                                        ></span
+                                    >
+                                    <button>Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                            <div
+                                class="product-item item-hover d-flex flex-column justify-content-center align-items-center bg-white"
+                            >
+                                <img
+                                    class="border-bottom"
+                                    src="./assets/image/xanh1.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center p-3"
+                                >
+                                    <span class="text-hover">Santa Cruz - Xanh</span>
+                                    <span class="text-danger fs-6 fw-bold my-2"
+                                        >500.000 ₫
+                                        <span
+                                            class="text-black-50 text-decoration-line-through"
+                                            >600.000 ₫</span
+                                        ></span
+                                    >
+                                    <button>Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                            <div
+                                class="product-item item-hover d-flex flex-column justify-content-center align-items-center bg-white"
+                            >
+                                <img
+                                    class="border-bottom"
+                                    src="./assets/image/vang1.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center p-3"
+                                >
+                                    <span class="text-hover">Santa Cruz - Vàng</span>
+                                    <span class="text-danger fs-6 fw-bold my-2"
+                                        >500.000 ₫
+                                        <span
+                                            class="text-black-50 text-decoration-line-through"
+                                            >600.000 ₫</span
+                                        ></span
+                                    >
+                                    <button>Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-3 mb-4 mb-lg-0">
+                            <div
+                                class="product-item item-hover d-flex flex-column justify-content-center align-items-center bg-white"
+                            >
+                                <img
+                                    class="border-bottom"
+                                    src="./assets/image/den1.png"
+                                    alt=""
+                                />
+                                <div
+                                    class="d-flex flex-column justify-content-center align-items-center p-3"
+                                >
+                                    <span class="text-hover">Santa Cruz - Đen</span>
+                                    <span class="text-danger fs-6 fw-bold my-2"
+                                        >500.000 ₫
+                                        <span
+                                            class="text-black-50 text-decoration-line-through"
+                                            >600.000 ₫</span
+                                        ></span
+                                    >
+                                    <button>Xem ngay</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div
+                                class="title d-flex justify-content-between border-bottom fw-bold pt-2"
+                            >
+                                <span
+                                    class="pb-1 border-bottom border-3 border-warning"
+                                    >SẢN PHẨM XEM NHIỀU</span
+                                >
+                                <div class="">
+                                    <button>
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="d-flex justify-content-start my-4">
+                                    <img
+                                        class="product-thumbnail border"
+                                        src="./assets/image/den.png"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column ms-3 mt-1">
+                                        <span class="text-hover">Tay nắm Santa-Cuz - Đỏ</span>
+                                        <span
+                                            class="text-danger fs-6 fw-bold my-2"
+                                            >500.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start my-4">
+                                    <img
+                                        class="product-thumbnail border"
+                                        src="./assets/image/den.png"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column ms-3 mt-1">
+                                        <span class="text-hover">Tay nắm Santa-Cuz - Đỏ</span>
+                                        <span
+                                            class="text-danger fs-6 fw-bold my-2"
+                                            >500.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div
+                                class="title d-flex justify-content-between border-bottom fw-bold pt-2"
+                            >
+                                <span
+                                    class="pb-1 border-bottom border-3 border-warning"
+                                    >PHỤ KIỆN ĐI KÈM</span
+                                >
+                                <div class="">
+                                    <button>
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="d-flex justify-content-start my-4">
+                                    <img
+                                        class="product-thumbnail border"
+                                        src="./assets/image/den.png"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column ms-3 mt-1">
+                                        <span class="text-hover">Mắt xích xe đạp</span>
+                                        <span
+                                            class="text-danger fs-6 fw-bold my-2"
+                                            >500.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start my-4">
+                                    <img
+                                        class="product-thumbnail border"
+                                        src="./assets/image/den.png"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column ms-3 mt-1">
+                                        <span class="text-hover">Tay nắm Santa-Cuz - Đỏ</span>
+                                        <span
+                                            class="text-danger fs-6 fw-bold my-2"
+                                            >500.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div
+                                class="title d-flex justify-content-between border-bottom fw-bold pt-2"
+                            >
+                                <span
+                                    class="pb-1 border-bottom border-3 border-warning"
+                                    >PHỤ TÙNG THAY THẾ</span
+                                >
+                                <div class="">
+                                    <button>
+                                        <i class="fas fa-chevron-left"></i>
+                                    </button>
+                                    <button>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="product-content">
+                                <div class="d-flex justify-content-start my-4">
+                                    <img
+                                        class="product-thumbnail border"
+                                        src="./assets/image/den.png"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column ms-3 mt-1">
+                                        <span class="text-hover">Khung nhôm chính hãng</span>
+                                        <span
+                                            class="text-danger fs-6 fw-bold my-2"
+                                            >500.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-start my-4">
+                                    <img
+                                        class="product-thumbnail border"
+                                        src="./assets/image/den.png"
+                                        alt=""
+                                    />
+                                    <div class="d-flex flex-column ms-3 mt-1">
+                                        <span class="text-hover">Tay nắm Santa-Cuz - Đỏ</span>
+                                        <span
+                                            class="text-danger fs-6 fw-bold my-2"
+                                            >500.000 ₫</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3">
+                <div class="container">
+                    <div
+                        class="title d-flex justify-content-between border-bottom fw-bold pt-2"
+                    >
+                        <span class="pb-1 border-bottom border-3 border-warning"
+                            >TIN TỨC</span
+                        >
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="item-hover border bg-white">
+                                <img
+                                    class="w-100"
+                                    src="./assets/image/thumbnail1.png"
+                                    alt=""
+                                />
+                                <div class="d-flex flex-column p-3">
+                                    <h6 class="fw-bold">
+                                        Bán xe đạp Nhật hàng bãi, nhiều mẫu đẹp
+                                    </h6>
+                                    <div
+                                        class="d-flex fw-bold"
+                                        style="
+                                            color: #c1c1c1;
+                                            font-size: 0.8rem;
+                                        "
+                                    >
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-calendar-minus fa-xs me-1"
+                                            ></i>
+                                            20/12/2015
+                                        </div>
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-clock fa-xs me-1"
+                                            ></i>
+                                            11:20:00 AM
+                                        </div>
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-comment-dots fa-xs me-1"
+                                            ></i>
+                                            0 bình luận
+                                        </div>
+                                    </div>
+                                    <div class="mt-1" style="font-size: 0.9rem">
+                                        This is Photoshop's version of Lorem
+                                        Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean sollicitudin...
+                                    </div>
+                                    <div
+                                        class="mt-3 text-hover"
+                                        style="font-size: 0.8rem"
+                                    >
+                                        Đọc thêm
+                                        <i
+                                            class="fas fa-chevron-right"
+                                            style="font-size: 0.6rem"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="item-hover border bg-white">
+                                <img
+                                    class="w-100"
+                                    src="./assets/image/thumbnail2.png"
+                                    alt=""
+                                />
+                                <div class="d-flex flex-column p-3">
+                                    <h6 class="fw-bold">
+                                        Bán xe đạp Nhật hàng bãi, nhiều mẫu đẹp
+                                    </h6>
+                                    <div
+                                        class="d-flex fw-bold"
+                                        style="
+                                            color: #c1c1c1;
+                                            font-size: 0.8rem;
+                                        "
+                                    >
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-calendar-minus fa-xs me-1"
+                                            ></i>
+                                            20/12/2015
+                                        </div>
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-clock fa-xs me-1"
+                                            ></i>
+                                            11:20:00 AM
+                                        </div>
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-comment-dots fa-xs me-1"
+                                            ></i>
+                                            0 bình luận
+                                        </div>
+                                    </div>
+                                    <div class="mt-1" style="font-size: 0.9rem">
+                                        This is Photoshop's version of Lorem
+                                        Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean sollicitudin...
+                                    </div>
+                                    <div
+                                        class="mt-3 text-hover"
+                                        style="font-size: 0.8rem"
+                                    >
+                                        Đọc thêm
+                                        <i
+                                            class="fas fa-chevron-right"
+                                            style="font-size: 0.6rem"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 mb-4 mb-lg-0">
+                            <div class="item-hover border bg-white">
+                                <img
+                                    class="w-100"
+                                    src="./assets/image/thumbnail3.png"
+                                    alt=""
+                                />
+                                <div class="d-flex flex-column p-3">
+                                    <h6 class="fw-bold">
+                                        Bán xe đạp Nhật hàng bãi, nhiều mẫu đẹp
+                                    </h6>
+                                    <div
+                                        class="d-flex fw-bold"
+                                        style="
+                                            color: #c1c1c1;
+                                            font-size: 0.8rem;
+                                        "
+                                    >
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-calendar-minus fa-xs me-1"
+                                            ></i>
+                                            20/12/2015
+                                        </div>
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-clock fa-xs me-1"
+                                            ></i>
+                                            11:20:00 AM
+                                        </div>
+                                        <div class="me-1 me-lg-3">
+                                            <i
+                                                class="far fa-comment-dots fa-xs me-1"
+                                            ></i>
+                                            0 bình luận
+                                        </div>
+                                    </div>
+                                    <div class="mt-1" style="font-size: 0.9rem">
+                                        This is Photoshop's version of Lorem
+                                        Ipsum. Proin gravida nibh vel velit
+                                        auctor aliquet. Aenean sollicitudin...
+                                    </div>
+                                    <div
+                                        class="mt-3 text-hover"
+                                        style="font-size: 0.8rem"
+                                    >
+                                        Đọc thêm
+                                        <i
+                                            class="fas fa-chevron-right"
+                                            style="font-size: 0.6rem"
+                                        ></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-5" style="background-color: #f0efee">
+                <div class="container">
+                    <div class="row">
+                        <div
+                            class="d-flex justify-content-center align-items-center col-6 col-sm-4 col-lg-2"
+                        >
+                            <img
+                                class="my-4"
+                                style="width: 80%; height: auto"
+                                src="./assets/image/1200px-Crytek_Logo.png"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="d-flex justify-content-center align-items-center col-6 col-sm-4 col-lg-2"
+                        >
+                            <img
+                                class="my-4"
+                                style="width: 80%; height: auto"
+                                src="./assets/image/1280px-BioWare_logo.png"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="d-flex justify-content-center align-items-center col-6 col-sm-4 col-lg-2"
+                        >
+                            <img
+                                class="my-4"
+                                style="width: 80%; height: auto"
+                                src="./assets/image/bandai.png"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="d-flex justify-content-center align-items-center col-6 col-sm-4 col-lg-2"
+                        >
+                            <img
+                                class="my-4"
+                                style="width: 80%; height: auto"
+                                src="./assets/image/Activision.png"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="d-flex justify-content-center align-items-center col-6 col-sm-4 col-lg-2"
+                        >
+                            <img
+                                class="my-4"
+                                style="width: 80%; height: auto"
+                                src="./assets/image/Atari_Lynx_logo.png"
+                                alt=""
+                            />
+                        </div>
+                        <div
+                            class="d-flex justify-content-center align-items-center col-6 col-sm-4 col-lg-2"
+                        >
+                            <img
+                                class="my-4"
+                                style="width: 80%; height: auto"
+                                src="./assets/image/343_Industries_logo.png"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer pt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-lg-4">
+                        <h6 class="fw-bold mt-4">VỀ CHÚNG TÔI</h6>
+                        <div
+                            style="width: 4rem"
+                            class="px-4 border-bottom border-2 border-white"
+                        ></div>
+                        <div class="footer-logo my-5">
+                            <img src="./assets/image/logo.png" alt="" />
+                        </div>
+                        <span
+                            >DKT được thành lập với niềm đam mê và khát vọng
+                            thành công trong lĩnh vực Thương mại điện tử.Chúng
+                            tôi đã và đang khẳng định được vị trí hàng đầu bằng
+                            những sản phẩm
+                        </span>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h6 class="fw-bold mt-4">DỊCH VỤ</h6>
+                        <div
+                            style="width: 4rem"
+                            class="px-4 border-bottom border-2 border-white"
+                        ></div>
+                        <ul class="mt-5 list-unstyled">
+                            <li>Đăng ký tên miền</li>
+                            <li>Tên miền miễn phí</li>
+                            <li>Dịch vụ email</li>
+                            <li>Quảng cáo Google Adwords</li>
+                            <li>Phần mền quản lý bán hàng</li>
+                            <li>Thiết kế web đa ngành</li>
+                            <li>Nhà phát triển ứng dụng</li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h6 class="fw-bold mt-4">ĐĂNG KÝ NHẬN TIN</h6>
+                        <div
+                            style="width: 4rem"
+                            class="px-4 border-bottom border-2 border-white"
+                        ></div>
+                        <div class="mt-5">
+                            <span>
+                                Nhập thông tin email của bạn để nhận những chính
+                                sách ưu đãi từ chúng tôi
+                            </span>
+                        </div>
+                        <input
+                            class="w-100 py-2 px-4 my-4 bg-transparent border border-light"
+                            type="text"
+                            placeholder="Nhập email của bạn..."
+                        />
+                        <div class="d-flex">
+                            <div
+                                style="height: 2rem; width: 2rem"
+                                class="d-flex justify-content-center align-items-center border border-light rounded-circle me-3"
+                            >
+                                <i class="fab fa-facebook-f"></i>
+                            </div>
+                            <div
+                                style="height: 2rem; width: 2rem"
+                                class="d-flex justify-content-center align-items-center border border-light rounded-circle me-3"
+                            >
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div
+                                style="height: 2rem; width: 2rem"
+                                class="d-flex justify-content-center align-items-center border border-light rounded-circle me-3"
+                            >
+                                <i class="fab fa-google-plus-g"></i>
+                            </div>
+                            <div
+                                style="height: 2rem; width: 2rem"
+                                class="d-flex justify-content-center align-items-center border border-light rounded-circle me-3"
+                            >
+                                <i class="fab fa-pinterest-p"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-3">
+                        <h6 class="fw-bold mt-4">LIÊN HỆ VỚI CHÚNG TÔI</h6>
+                        <div
+                            style="width: 4rem"
+                            class="px-4 border-bottom border-2 border-white"
+                        ></div>
+                        <div class="my-5">
+                            <span>
+                                Địa chỉ: Tầng 4 - Tòa nhà Hanoi Group - 442 Đội
+                                Cấn - Ba Đình - Hà Nội
+                            </span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div>
+                                <i class="fas fa-mobile-android fa-xs"></i>
+                                <span>Điện thoại : (84-4) 66558868 </span>
+                            </div>
+                            <div>
+                                <i class="fas fa-fax fa-xs"></i>
+                                <span>Fax : (84-4) 66558868 </span>
+                            </div>
+                            <div>
+                                <i class="far fa-at fa-xs"></i>
+                                <span>Email: info@dkt.com.vn </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="small_nav mt-5">
+                <div
+                    class="container d-flex justify-content-between align-items-center py-2"
+                >
+                    <p class="m-0">© Copyright 2008-2015 DKT Technology JSC</p>
+                    <div class="d-flex">
+                        <i class="fab fa-cc-paypal ms-2"></i>
+                        <i class="fab fa-cc-visa ms-2"></i>
+                        <i class="fa-brands fa-cc-mastercard ms-2"></i>
+                        <i class="fa-solid fa-closed-captioning ms-2"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://kit.fontawesome.com/f0e53bc66c.js"
+            crossorigin="anonymous"
+        ></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </body>
+</html>
